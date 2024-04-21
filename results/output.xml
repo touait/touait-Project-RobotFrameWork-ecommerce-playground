@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-21T23:57:53.079107" rpa="false" schemaversion="5">
+<suite id="s1" name="Projet Ecommerce-Playground" source="E:\testing\ISTQB Elife\cours robotframework\projet_ecommerce-playground">
+<suite id="s1-s1" name="ajoutProduit" source="E:\testing\ISTQB Elife\cours robotframework\projet_ecommerce-playground\ajoutProduit.robot">
+<test id="s1-s1-t1" name="Ajouter un produit au panier" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:57:53.870651" level="INFO">Opening browser 'chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T23:57:53.869651" elapsed="11.345159"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:05.254789" level="INFO">Page title is 'Your Store'.</msg>
+<arg>Your Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-21T23:58:05.217809" elapsed="0.037978"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-21T23:58:05.257786" elapsed="0.339806"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:05.604588" level="INFO">Typing text 'HTC Touch HD' into text field '//div[@id='entry_217822']//input[@placeholder='Search For Products']'.</msg>
+<arg>//div[@id='entry_217822']//input[@placeholder='Search For Products']</arg>
+<arg>HTC Touch HD</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T23:58:05.602589" elapsed="0.577665"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:06.181254" level="INFO">Clicking button '//button[normalize-space()='Search']'.</msg>
+<arg>//button[normalize-space()='Search']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T23:58:06.181254" elapsed="8.327570"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:14.541117" level="INFO">Current page contains text 'Search - HTC Touch HD'.</msg>
+<arg>Search - HTC Touch HD</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-21T23:58:14.510826" elapsed="0.030291"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:14.545139" level="INFO">Clicking element '//a[@id='mz-product-grid-image-28-212469']//div[@class='carousel-item active']//img[@title='HTC Touch HD']'.</msg>
+<arg>//a[@id='mz-product-grid-image-28-212469']//div[@class='carousel-item active']//img[@title='HTC Touch HD']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T23:58:14.542155" elapsed="10.140562"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:24.686720" level="INFO">Clicking button '//div[@id='entry_216842']//button[@title='Add to Cart'][normalize-space()='Add to Cart']'.</msg>
+<arg>${AjoutToCart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T23:58:24.685717" elapsed="0.112934"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:a[aria-controls="cart-total-drawer"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-21T23:58:24.799650" elapsed="0.049971"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:24.851620" level="INFO">Clicking element 'css:a[aria-controls="cart-total-drawer"]'.</msg>
+<arg>css:a[aria-controls="cart-total-drawer"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T23:58:24.850620" elapsed="0.067883"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-04-21T23:58:24.919502" level="INFO">Clicking link 'https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart'.</msg>
+<arg>https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T23:58:24.918503" elapsed="7.328704"/>
+</kw>
+<status status="PASS" start="2024-04-21T23:57:53.864654" elapsed="38.383553"/>
+</test>
+<status status="PASS" start="2024-04-21T23:57:53.204036" elapsed="39.052166"/>
+</suite>
+<status status="PASS" start="2024-04-21T23:57:53.094099" elapsed="39.172099"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Projet Ecommerce-Playground">Projet Ecommerce-Playground</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="ajoutProduit">Projet Ecommerce-Playground.ajoutProduit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
